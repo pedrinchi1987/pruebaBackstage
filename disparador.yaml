@@ -1,0 +1,27 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: disparar-github-action
+  title: Ejecutar Workflow de GitHub
+spec:
+  owner: user@example.com
+  type: service
+
+  parameters:
+    - title: Datos del Repositorio
+      properties:
+        repoUrl:
+          title: URL del Repositorio
+          type: string
+          ui:field: RepoUrlPicker # Esto muestra un selector de tus repos
+
+  steps:
+    - id: github-action
+      name: Disparando Workflow
+      action: github:actions:dispatch
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+        workflowId: 'mi-workflow.yml' # Nombre del archivo .yml en tu repo
+        branchOrTagName: 'main'
+        workflowInputs:
+          message: 'Ejecutado desde Backstage'
