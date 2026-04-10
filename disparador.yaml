@@ -21,7 +21,7 @@ spec:
       action: github:actions:dispatch
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        workflowId: 'mi-workflow.yml' # Nombre del archivo .yml en tu repo
+        workflowId: 'workflow.yml' # Nombre del archivo .yml en tu repo
         branchOrTagName: 'main'
         workflowInputs:
           message: 'Ejecutado desde Backstage'
