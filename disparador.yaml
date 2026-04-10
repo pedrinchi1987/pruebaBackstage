@@ -4,7 +4,7 @@ metadata:
   name: disparar-github-action
   title: Ejecutar Workflow de GitHub
 spec:
-  owner: user@example.com
+  owner: guest
   type: service
 
   parameters:
