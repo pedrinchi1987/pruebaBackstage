@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: value
 spec:
-  owner: guest
+  owner: user:default/guest
   type: service
 
   parameters:
