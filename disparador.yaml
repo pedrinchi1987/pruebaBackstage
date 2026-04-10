@@ -14,6 +14,9 @@ spec:
           title: URL del Repositorio
           type: string
           ui:field: RepoUrlPicker # Esto muestra un selector de tus repos
+          ui:options:
+          allowedHosts:
+            - github.com # <--- Esto fuerza a que aparezca en la lista
 
   steps:
     - id: github-action
