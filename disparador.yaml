@@ -3,8 +3,6 @@ kind: Template
 metadata:
   name: disparar-github-action
   title: Ejecutar Workflow de GitHub
-  annotations:
-    backstage.io/techdocs-ref: value
 spec:
   owner: user:default/guest
   type: service
