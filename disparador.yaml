@@ -27,4 +27,5 @@ spec:
         workflowId: 'workflow.yml' # Nombre del archivo .yml en tu repo
         branchOrTagName: 'main'
         workflowInputs:
-          message: 'Ejecutado desde Backstage'
+          nombre_proyecto: 'Demo Backstage'
+          mensaje_personalizado: 'Ejecutado desde Backstage'
